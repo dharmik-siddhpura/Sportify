@@ -1,0 +1,22 @@
+# Build output
+bin/
+obj/
+*.exe
+*.pdb
+*.vshost.*
+*.manifest
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.ncb
+*.opendb
+
+# Database binary files
+*.mdf
+*.ldf
+
+# Logs
+*.log
