@@ -295,8 +295,6 @@ namespace sportify
         {
             qry = "select max(S_Id) as S_Id from tbl_sales";
 
-            MessageBox.Show(qry);
-
             DataTable dt = new DataTable();
             con = new SqlConnection(CLS.cnstr);
             cmd = new SqlCommand(qry, con);

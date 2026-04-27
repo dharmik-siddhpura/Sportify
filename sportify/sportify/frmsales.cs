@@ -50,19 +50,9 @@ namespace sportify
 
         private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0) return;
             string bid = dgv.CurrentRow.Cells[1].Value.ToString();
-            MessageBox.Show(bid);
-
-            new frmreport(bid).Show();
-
-        }
-
-        private void dgv_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            string bid = dgv.CurrentRow.Cells[2].Value.ToString();
-            MessageBox.Show(bid);
-
-            new frmreport(bid).Show();
+            MessageBox.Show("Bill No: " + bid, "Sale Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
