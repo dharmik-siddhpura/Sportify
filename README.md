@@ -42,7 +42,7 @@ A Windows desktop application built with **C# Windows Forms** and **SQL Server**
 - **Payment Methods** — Manage accepted payment types
 
 ### 📄 Reports
-- Sales reports generated using **RDLC (Report Definition Language Client-side)** with Microsoft Reporting
+- View last sale ID from the print button on the Add Sale screen
 
 ---
 
@@ -63,7 +63,6 @@ A Windows desktop application built with **C# Windows Forms** and **SQL Server**
 - Windows OS
 - [Visual Studio 2019 / 2022](https://visualstudio.microsoft.com/) (with .NET Desktop Development workload)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) + SQL Server Management Studio (SSMS)
-- Microsoft Report Viewer (for sales reports)
 
 ---
 

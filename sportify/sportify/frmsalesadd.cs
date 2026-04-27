@@ -294,14 +294,15 @@ namespace sportify
         private void btnprint_Click(object sender, EventArgs e)
         {
             qry = "select max(S_Id) as S_Id from tbl_sales";
-
             DataTable dt = new DataTable();
             con = new SqlConnection(CLS.cnstr);
             cmd = new SqlCommand(qry, con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
-            new frmreport(dt.Rows[0]["S_Id"].ToString()).Show();
-            //MessageBox.Show(dt.Rows[0]["S_Id"].ToString());
+            if (dt.Rows.Count > 0)
+            {
+                MessageBox.Show("Sale ID: " + dt.Rows[0]["S_Id"].ToString(), "Last Sale", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
